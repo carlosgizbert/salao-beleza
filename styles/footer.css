@@ -1,0 +1,19 @@
+.footer {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 214px;
+  color: white;
+  background: var(--color-primary);
+}
+
+.footer img {
+  height: 32px;
+}
+
+.footer-social {
+  margin-top: 32px;
+}
+.footer-social img {
+  margin-left: 32px;
+}
