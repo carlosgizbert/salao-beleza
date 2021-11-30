@@ -2,18 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
-@import url(./footer.css);
+/* mobile 768px */
+@import url(./mobile/sections-mobile/sections-mobile.css) only screen and
+  (max-width: 768px);
 
-@import url(./mobile/sections-mobile/section-depoimentos.css) only screen and
+/* desktop */
+@import url(./mobile/sections-desktop/sections-desktop.css) only screen and
   (max-width: 768px);
-@import url(./mobile/sections-mobile/section-agendar-horario.css) only screen
-  and (max-width: 768px);
-@import url(./mobile/sections-mobile/section-servicos.css) only screen and
-  (max-width: 768px);
-@import url(./mobile/sections-mobile/section-sobre-nos.css) only screen and
-  (max-width: 768px);
-@import url(./mobile/sections-mobile/section-contato.css) only screen and
-  (max-width: 768px);
+
+@import url(./footer.css);
 
 :root {
   --color-background: #f9f9f9;
