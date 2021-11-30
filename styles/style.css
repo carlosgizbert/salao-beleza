@@ -4,14 +4,16 @@
 
 @import url(./footer.css);
 
-@media screen and (max-width: 768px) {
-  /*-SECTIONS-*/
-  @import url(./mobile/sections-mobile/section-depoimentos.css);
-  @import url(./mobile/sections-mobile/section-agendar-horario.css);
-  @import url(./mobile/sections-mobile/section-servicos.css);
-  @import url(./mobile/sections-mobile/section-sobre-nos.css);
-  @import url(./mobile/sections-mobile/section-contato.css);
-}
+@import url(./mobile/sections-mobile/section-depoimentos.css) only screen and
+  (max-width: 768px);
+@import url(./mobile/sections-mobile/section-agendar-horario.css) only screen
+  and (max-width: 768px);
+@import url(./mobile/sections-mobile/section-servicos.css) only screen and
+  (max-width: 768px);
+@import url(./mobile/sections-mobile/section-sobre-nos.css) only screen and
+  (max-width: 768px);
+@import url(./mobile/sections-mobile/section-contato.css) only screen and
+  (max-width: 768px);
 
 :root {
   --color-background: #f9f9f9;
