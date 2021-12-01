@@ -11,19 +11,33 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
+    <!-- fontes -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <!-- fontes -->
     <title>Beauty Salon - Origin Six</title>
   </head>
-    <header class="header">
+    <header id="header">
+    <nav>
       <img alt="Salão de Beleza" src="./imgs/logo.svg" />
-
+      <div class="menu">
+        <ul class="text-h1">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#serviços">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+         <div class="toggle icon-menu" onclick="menuToggle()"></div>
+        <div class="toggle icon-close" onclick="menuToggle()"></div>
+    </nav>
     </header>
     <main>
       <!-- início agendar horario -->
       <section class="section-agendar">
         <div class="section-agendar-img"></div>
         <div class="text">
-          <h1>Saúde natural para os seus cabelos</h1>
+          <h1 class="text-h1">Saúde natural para os seus cabelos</h1>
           <p >
             Um salão exclusivo em São Paulo, especializado em tratamentos
             naturais.
@@ -39,7 +53,7 @@
       <section class="section-sobre">
         <div class="section-sobre-img"></div>
           <div class="text">
-            <h1>Sobre nós</h1>
+            <h1 class="text-h1">Sobre nós</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                 sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin
@@ -67,7 +81,7 @@
       <hr style="border: 1px solid rgba(105, 185, 157, 1)" />
             <!-- inicio serviços -->
             <section class="section-servicos">
-                <h1 style="margin-bottom: 16px">Serviços</h1>
+                <h1 class="text-h1" style="margin-bottom: 16px">Serviços</h1>
                 <p style="color: var(--color-dark)">
                   Com mais de 10 anos no mercado, o
                   <span style="color: var(--color-primary)"><b>Beautysalon</b></span>
@@ -77,7 +91,7 @@
                 <div class="section-servicos-lista-cards">
                   <div class="section-servicos-card">
                     <img src="./imgs/servicos/terapia.svg" />
-                    <h1>Terapia Capilar</h1>
+                    <h1 class="text-h1">Terapia Capilar</h1>
                     <p>
                       Terapia completa para couro cabeludo e fios, protegendo todos os
                       tipos de cabelos, inclusive os longos e finos.
@@ -86,7 +100,7 @@
       
                   <div class="section-servicos-card">
                     <img src="./imgs/servicos/cortes.svg" />
-                    <h1>Cortes</h1>
+                    <h1 class="text-h1">Cortes</h1>
                     <p>
                       A nossa equipe é repleta de profissionais renomados, famosos por
                       lançarem tendências com cortes diferenciados e clássicos.
@@ -95,7 +109,7 @@
       
                   <div class="section-servicos-card">
                     <img src="./imgs/servicos/tratamentos.svg" />
-                    <h1>Tratamentos</h1>
+                    <h1 class="text-h1">Tratamentos</h1>
                     <p>
                       O beautysalon conta com diversos tratamentos naturais e
                       totalmente veganos, para qualquer tipo de cabelo.
@@ -108,7 +122,7 @@
             <!-- inicio depoimentos -->
             <section class="section-depoimentos">
               <container>
-                <h1>Depoimentos de quem já passou por aqui</h1>
+                <h1 class="text-h1">Depoimentos de quem já passou por aqui</h1>
                 <div class="section-card-depoimentos">
                   <p>
                     <img
@@ -133,7 +147,7 @@
             <hr style="border: 1px solid rgba(105, 185, 157, 1)" />
             <!-- inicio contato -->
             <section class="section-contato">
-              <h1 style="margin-bottom: 16px">Entre em contato com a gente!</h1>
+              <h1 class="text-h1" style="margin-bottom: 16px">Entre em contato com a gente!</h1>
               <p>
                 Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
                 suas críticas e sugestões.
@@ -171,5 +185,6 @@
             <!-- fim rodape -->
     </main>
     <!-- inicio rodape -->
+    <script src="main.js"></script>
   </body>
 </html>
