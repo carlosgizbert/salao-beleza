@@ -1,7 +1,7 @@
 .section-servicos {
   background: var(--color-background);
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .section-servicos-lista-cards {
@@ -14,7 +14,7 @@
 }
 
 .section-servicos-card {
-  width: 300px;
+  width: 250px;
   height: 300px;
   display: flex;
   flex-direction: column;

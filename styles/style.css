@@ -37,11 +37,11 @@ body {
   line-height: 26px;
   background: var(--color-background);
   color: var(--color-gray);
+  width: 100vw;
 }
 
 main {
   margin: 0 auto;
-  width: 100vw;
 }
 
 section {
