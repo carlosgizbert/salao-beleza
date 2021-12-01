@@ -1,0 +1,39 @@
+.section-agendar {
+  margin: 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.section-agendar-img {
+  background-image: url('/imgs/agendar/1.jpg');
+  background-size: cover;
+  position: relative;
+  right: 47px;
+  height: 335px;
+  border-radius: 4px;
+}
+
+section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-agendar-img::before {
+  content: '';
+  background: #ccf4e6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -16.8%;
+  left: 16.8%;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.section-agendar .text {
+  text-align: center;
+}
+
+.section-agendar h1 {
+  line-height: 40px;
+}

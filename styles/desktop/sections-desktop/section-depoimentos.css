@@ -1,0 +1,36 @@
+.section-depoimentos {
+  background: var(--color-background);
+}
+
+.section-cards-depoimentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-card-depoimentos {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  margin-top: 64px;
+  border-radius: var(--radius-slim);
+}
+
+.section-card-depoimento img {
+  height: 32px;
+}
+
+.section-card-nome-usuario {
+  margin-left: 8px;
+}
+
+.section-usuario-depoimento {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 24px;
+}
