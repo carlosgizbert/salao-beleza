@@ -11,3 +11,113 @@
   width: 100vw;
   height: 72px;
 }
+
+/* menu */
+
+.menu {
+  opacity: 0;
+}
+
+.nav.show .menu {
+  opacity: 0.9;
+  transition: opacity 0.6s ease 0s;
+}
+
+nav {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav .menu {
+  opacity: 1;
+  visibility: hidden;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+nav.show .menu {
+  visibility: visible;
+  display: grid;
+  place-content: center;
+}
+
+/* toggle menu */
+.toggle {
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+/* não clicado */
+.icon-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.icon-close {
+  display: none;
+}
+/* clicado */
+nav.show .icon-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+nav.show .icon-close {
+  display: block;
+
+  position: absolute;
+  right: 1.5rem;
+  /* transição */
+}
+/* toggle menu */
+
+nav .menu ul {
+  display: grid;
+  gap: 4rem;
+}
+
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--color-primary);
+}
+
+nav ul li a:after {
+  content: '';
+  background-color: var(--color-primary);
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.scroll {
+  box-shadow: 0px 0px 8px 0px #c5c5c5;
+  transition: box-shadow 0.2s;
+}
+
+/* fim menu */
