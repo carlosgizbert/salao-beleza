@@ -31,23 +31,22 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   font-family: var(--font-01);
   font-size: 16px;
   line-height: 26px;
   background: var(--color-background);
   color: var(--color-gray);
-  width: 100vw;
 }
 
 main {
-  margin-top: calc(var(--header-height) + 4rem);
+  margin-top: calc(72px + 1.5rem);
 }
 
 /* menu */
 
 nav {
-  height: var(--header-height);
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,8 +92,7 @@ nav.show .menu {
   visibility: visible;
 }
 .icon-close {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 /* clicado */
 nav.show .icon-menu {
@@ -102,8 +100,7 @@ nav.show .icon-menu {
   visibility: hidden;
 }
 nav.show .icon-close {
-  opacity: 1;
-  visibility: visible;
+  display: block;
 
   position: absolute;
   right: 1.5rem;
@@ -176,16 +173,14 @@ p {
   margin: 0 auto;
 }
 
-.header img {
+#header img {
   margin-left: 1.5rem;
   height: 32px;
   cursor: pointer;
 }
 
 .icon-menu {
-  height: 24px;
   margin-right: 1.5rem;
-  cursor: pointer;
 }
 
 .radius-slim {

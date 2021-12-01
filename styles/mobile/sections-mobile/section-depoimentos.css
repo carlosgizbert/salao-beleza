@@ -2,6 +2,12 @@
   background: var(--color-background);
 }
 
+.section-cards-depoimentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-card-depoimentos {
   width: 250px;
   display: flex;
