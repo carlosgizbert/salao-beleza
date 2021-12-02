@@ -20,12 +20,15 @@
 }
 
 .section-sobre {
-  margin: 0;
   display: grid;
   gap: 2rem;
 }
 
-.section-sobre {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.section-sobre .container {
+  margin: 0;
+}
+
+.section-sobre .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }

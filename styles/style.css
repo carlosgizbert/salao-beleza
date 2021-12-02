@@ -7,8 +7,6 @@
   (max-width: 768px);
 
 /* desktop */
-@import url(./desktop/sections-desktop/sections-desktop.css) only screen and
-  (min-width: 768px);
 
 @import url(./header.css);
 @import url(./footer.css);
@@ -91,6 +89,20 @@ p {
   border-radius: var(--radius-slim);
 }
 
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    #69b99d 0%,
+    rgba(204, 244, 230, 0.34) 100%
+  );
+}
+
 hr {
   margin: 0;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
